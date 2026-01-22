@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Love - Streaming Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <div class="hero" id="hero-sec">
+        <div class="hero-background">
+            <img src="c:\Users\aalol\OneDrive\Desktop\image\R.jpg" alt="Raya and the Last Dragon" id="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-text">Movie</span>
+                <span class="logo-highlight">love</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="tvshows.html" class="nav-link">Tv Shows</a></li>
+                <li><a href="movies.html" class="nav-link">Movie</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search movie" id="search-input">
+                </div>
+                <a href="login.html" class="login-link" title="Login">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>Login</span>
+                </a>
+                <a href="login.html" class="profile-icon" title="Login / Profile">
+                    <img src="https://i.pravatar.cc/40?img=3" alt="Profile" id="profile-img">
+                </a>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="movie-info">
+                <h1 class="movie-title" id="main-title">RAYA AND THE<br>LAST DRAGON</h1>
+                <p class="movie-tagline">A quest to save her world. <span class="release-date">Mar. 03, 2021. USA</span>
+                </p>
+                <p class="movie-description">
+                    It is a long established fact that a reader will be distracted
+                    by the readable content of a page when looking at its
+                    layout. The point of using Lorem Ipsum is that it has a
+                    more-or-less normal distribution of letters.
+                </p>
+                <div class="movie-rating">
+                    <div class="stars">
+                
+                    </div>
+                    <span class="rating-text">8.0 RATING</span>
+                </div>
+                <div class="movie-actions">
+                    <button class="play-btn" id="play-button">
+                        <span>PLAY</span>
+                    </button>
+                    <button class="add-btn" id="add-button">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Movie Slider -->
+            <div class="movie-slider-container">
+                <div class="slider-wrapper" id="movie-slider">
+                    <div class="slider-track">
+                        <div class="slide active" data-index="0">
+                            <img src="c:\Users\aalol\OneDrive\Desktop\image\47.jpg" alt="WAECK-IT RALPH3">
+                            <div class="slide-overlay">
+                                <span class="slide-title">WAECK-IT RALPH3</span>
+                            </div>
+                        </div>
+                        <div class="slide" data-index="1">
+                            <img src="c:\Users\aalol\OneDrive\Desktop\image\49.jpg" alt="Puteri Purut">
+                            <div class="slide-overlay">
+                                <span class="slide-title">Puteri Purut</span>
+                            </div>
+                        </div>
+                        <div class="slide" data-index="2">
+                            <img src="c:\Users\aalol\OneDrive\Desktop\image\37.jpg" alt="DORA">
+                            <div class="slide-overlay">
+                                <span class="slide-title">DORA</span>
+                            </div>
+                        </div>
+                        <div class="slide" data-index="3">
+                            <img src="c:\Users\aalol\OneDrive\Desktop\image\11.jpg" alt="BIG HERO">
+                            <div class="slide-overlay">
+                                <span class="slide-title">BIG HERO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" id="prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots" id="slider-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                    </div>
+                    <button class="slider-btn next-btn" id="next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories Section -->
+    <section class="categories-section" id="categories">
+        <div class="category-filters">
+            <button class="category-btn active" data-category="all">ALL</button>
+            <button class="category-btn" data-category="action">Action</button>
+            <button class="category-btn" data-category="comedy">Comedy</button>
+            <button class="category-btn" data-category="series">Series</button>
+            <button class="category-btn" data-category="adventure">Adventure</button>
+            <button class="category-btn" data-category="other">Other</button>
+        </div>
+    </section>
+
+    <!-- Most Viewed Section -->
+    <section class="most-viewed-section" id="most-viewed">
+        <div class="section-header">
+            <h2 class="section-title">Most Viewed</h2>
+            <a href="#" class="view-all">View all <i class="fas fa-plus-circle"></i></a>
+        </div>
+        <div class="movies-carousel" id="movies-carousel">
+            <button class="carousel-btn carousel-prev" id="carousel-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="movies-track-wrapper">
+                <div class="movies-track" id="movies-track">
+                    <div class="movie-card" data-category="adventure">
+                        <div class="movie-poster">
+                            <img src="c:\Users\aalol\OneDrive\Desktop\image\9.jpg" alt="Mavka: The Forest Song">
+                            <div class="movie-badge">HD</div>
+                        </div>
+                        <div class="movie-card-info">
+                            <h4>Mavka: The Forest Song</h4>
+                            <p>(2023) Mar. 02, 2023</p>
+                        </div>
+                    </div>
+                    <div class="movie-card" data-category="action">
+                        <div class="movie-poster">
+                            <img src="c:\Users\aalol\OneDrive\Desktop\image\16.jpg" alt="Tom Clancy's Jack Ryan">
+                            <div class="movie-badge">PRIME</div>
+                        </div>
+                        <div class="movie-card-info">
+                            <h4>Tom Clancy's Jack Ryan</h4>
+                            <p>Season 1-4 Dual Audio</p>
+                        </div>
+                    </div>
+                    <div class="movie-card" data-category="comedy">
+                        <div class="movie-poster">
+                            <img src="c:\Users\aalol\OneDrive\Desktop\image\25.jpg" alt="The Boss Baby: Back in the Crib">
+                            <div class="movie-badge">HD</div>
+                        </div>
+                        <div class="movie-card-info">
+                            <h4>The Boss Baby: Back in the Crib</h4>
+                            <p>Season 1-2</p>
+                        </div>
+                    </div>
+                    <div class="movie-card" data-category="action">
+                        <div class="movie-poster">
+                            <img src="c:\Users\aalol\OneDrive\Desktop\image\31.jpg" alt="Bird Box Ba">
+                            <div class="movie-badge">NEW</div>
+                        </div>
+                        <div class="movie-card-info">
+                            <h4>Bird Box Barcelona</h4>
+                            <p>(2023) Jul. 14, 2023</p>
+                        </div>
+                    </div>
+                    <div class="movie-card" data-category="comedy">
+                        <div class="movie-poster">
+                            <img src="c:\Users\aalol\OneDrive\Desktop\image\44.jpg" alt="Day Shift">
+                            <div class="movie-badge">HD</div>
+                        </div>
+                        <div class="movie-card-info">
+                            <h4>Day Shift (2022)</h4>
+                            <p>Dual Audio Aug. 12, 2022</p>
+                        </div>
+                    </div>
+                    <div class="movie-card" data-category="adventure">
+                        <div class="movie-poster">
+                            <img src="c:\Users\aalol\OneDrive\Desktop\image\13.jpg" alt="Sonic Prime">
+                            <div class="movie-badge">PRIME</div>
+                        </div>
+                        <div class="movie-card-info">
+                            <h4>Sonic Prime</h4>
+                            <p>Season 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn" id="carousel-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Black Adam Featured Section -->
+    <section class="featured-movie-section" id="black-adam-section">
+        <div class="featured-background">
+            <img src=" c:\Users\aalol\OneDrive\Desktop\image\b60b235be9bf8e457c2097f1269842b7.jpg" alt="Black Adam" id="featured-bg">
+            
+            
+            <div class="featured-overlay"></div>
+        </div>
+        <div class="featured-content">
+            <div class="featured-info">
+                <h1 class="featured-title">BLACK ADAM</h1>
+                <div class="featured-rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <span class="imdb-rating">IMDb 8.1</span>
+                </div>
+                <p class="featured-description">
+                    Shazam | Death Adam (2022) Nearly 5,000 years after he
+                    was bestowed with the almighty powers of the Egyptian
+                    gods—and imprisoned just as quickly—Black Adam is freed
+                    from his earthly tomb, ready to unleash his unique form of
+                    justice on the modern world.
+                </p>
+                <div class="featured-actions">
+                    <button class="play-btn featured-play" id="featured-play">
+                        <span>PLAY</span>
+                    </button>
+                    <button class="add-btn featured-add" id="featured-add">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="featured-slider-container">
+                <div class="featured-slider" id="featured-slider">
+
+                    <div class="featured-slide active">
+                        <img src="c:\Users\aalol\OneDrive\Desktop\image\90099d2716b26deb589ee43d38ceaffd.jpg" alt="Scene 1">
+                    </div>
+                    <div class="featured-slide">
+                        <img src="c:\Users\aalol\OneDrive\Desktop\image\ba21b732f5456a517237bce407833a83.jpg" alt="Scene 2">
+                    </div>
+                    <div class="featured-slide">
+                        <img src="c:\Users\aalol\OneDrive\Desktop\image\68966447627656c77efa3571c8be6d44.jpg" alt="Scene 3">
+                    </div>
+                    <div class="featured-slide">
+                        <img src="c:\Users\aalol\OneDrive\Desktop\image\46984812dfebf35ade80f0dc70f4cac6.jpg" alt="Scene 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

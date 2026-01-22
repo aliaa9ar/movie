@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Shows - Movie Love</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tvshows.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar tv-navbar">
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo-text">Movie</span>
+                <span class="logo-highlight">love</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="tvshows.html" class="nav-link active">Tv Shows</a></li>
+            <li><a href="movies.html" class="nav-link">Movie</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search TV shows">
+            </div>
+            <a href="login.html" class="profile-icon" title="Login / Profile">
+                <img src="https://i.pravatar.cc/40?img=3" alt="Profile">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="tv-hero">
+        <div class="tv-hero-bg"></div>
+        <div class="tv-hero-content">
+            <h1 class="tv-hero-title">TV <span>Shows</span></h1>
+            <p class="tv-hero-subtitle">Discover the best series from around the world</p>
+        </div>
+    </section>
+
+    <!-- Categories Filter -->
+    <section class="tv-categories">
+        <div class="category-wrapper">
+            <button class="tv-category-btn active" data-filter="all">All</button>
+            <button class="tv-category-btn" data-filter="drama">Drama</button>
+            <button class="tv-category-btn" data-filter="action">Action</button>
+            <button class="tv-category-btn" data-filter="comedy">Comedy</button>
+            <button class="tv-category-btn" data-filter="thriller">Thriller</button>
+            <button class="tv-category-btn" data-filter="scifi">Sci-Fi</button>
+            <button class="tv-category-btn" data-filter="anime">Anime</button>
+        </div>
+    </section>
+
+    <!-- Featured Shows -->
+    <section class="featured-shows">
+        <div class="section-header">
+            <h2>Featured Shows</h2>
+            <a href="#" class="view-all-link">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="shows-grid">
+            <div class="show-card featured-card" data-category="drama">
+                <div class="show-poster">
+                    <img src="c:\Users\aalol\OneDrive\Desktop\image\breaking.jpg" alt="Breaking Bad">
+                    <div class="show-overlay">
+                        <button class="play-icon"><i class="fas fa-play"></i></button>
+                    </div>
+                    <span class="show-badge">TOP 1</span>
+                </div>
+                <div class="show-info">
+                    <h3>Breaking Bad</h3>
+                    <div class="show-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 9.5</span>
+                        <span class="year">2008-2013</span>
+                        <span class="seasons">5 Seasons</span>
+                    </div>
+                </div>
+            </div>
+            <div class="show-card featured-card" data-category="thriller">
+                <div class="show-poster">
+                    <img src="c:\Users\aalol\OneDrive\Desktop\image\streng.jpg" alt="Stranger Things">
+                    <div class="show-overlay">
+                        <button class="play-icon"><i class="fas fa-play"></i></button>
+                    </div>
+                    <span class="show-badge">TOP 2</span>
+                </div>
+                <div class="show-info">
+                    <h3>Stranger Things</h3>
+                    <div class="show-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 8.7</span>
+                        <span class="year">2016-2024</span>
+                        <span class="seasons">4 Seasons</span>
+                    </div>
+                </div>
+            </div>
+            <div class="show-card featured-card" data-category="action">
+                <div class="show-poster">
+                    <img src="c:\Users\aalol\OneDrive\Desktop\image\man.jpg" alt="The Mandalorian">
+                    <div class="show-overlay">
+                        <button class="play-icon"><i class="fas fa-play"></i></button>
+                    </div>
+                    <span class="show-badge">TOP 3</span>
+                </div>
+                <div class="show-info">
+                    <h3>The Mandalorian</h3>
+                    <div class="show-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 8.8</span>
+                        <span class="year">2019-2023</span>
+                        <span class="seasons">3 Seasons</span>
+                    </div>
+                </div>
+            </div>
+            <div class="show-card featured-card" data-category="drama">
+                <div class="show-poster">
+                    <img src="c:\Users\aalol\OneDrive\Desktop\image\therones.jpg" alt="Game of Thrones">
+                    <div class="show-overlay">
+                        <button class="play-icon"><i class="fas fa-play"></i></button>
+                    </div>
+                    <span class="show-badge">TOP 4</span>
+                </div>
+                <div class="show-info">
+                    <h3>Game of Thrones</h3>
+                    <div class="show-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 9.3</span>
+                        <span class="year">2011-2019</span>
+                        <span class="seasons">8 Seasons</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Shows -->
+    <section class="popular-shows">
+        <div class="section-header">
+            <h2>Popular This Week</h2>
+            <a href="#" class="view-all-link">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="shows-grid small-grid">
+            <div class="show-card" data-category="comedy">
+                <div class="show-poster">
+                    <img src="c:\Users\aalol\Downloads\The Office should have ended when it lost Michael….jpg" alt="The Office">
+                    <div class="show-overlay">
+                        <button class="play-icon"><i class="fas fa-play"></i></button>
+                    </div>
+                    <span class="show-badge new">NEW</span>
+                </div>
+                <div class="show-info">
+                    <h3>The Office</h3>
+                    <div class="show-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 9.0</span>
+                        <span class="seasons">9 Seasons</span>
+                    </div>
+                </div>
+            </div>
+            <div class="show-card" data-category="scifi">
+                <div class="show-poster">
+                    <img src="c:\Users\aalol\OneDrive\Desktop\image\black.jpg" alt="Black Mirror">
+                    <div class="show-overlay">
+                        <button class="play-icon"><i class="fas fa-play"></i></button>
+                    </div>
+                    <span class="show-badge hd">HD</span>
+                </div>
+                <div class="show-info">
+                    <h3>Black Mirror</h3>
+                    <div class="show-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 8.8</span>
+                        <span class="seasons">6 Seasons</span>
+                    </div>
+                </div>
+            </div>
+            <div class="show-card" data-category="anime">
+                <div class="show-poster">
+                    <img src="c:\Users\aalol\OneDrive\Desktop\image\67b690140f09b858dd942c7a35e434e2.jpg" alt="Attack on Titan">
+                    <div class="show-overlay">
+                        <button class="play-icon"><i class="fas fa-play"></i></button>
+                    </div>
+                    <span class="show-badge hd">HD</span>
+                </div>
+                <div class="show-info">
+                    <h3>Attack on Titan</h3>
+                    <div class="show-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 9.1</span>
+                        <span class="seasons">4 Seasons</span>
+                    </div>
+                </div>
+            </div>
+            <div class="show-card" data-category="thriller">
+                <div class="show-poster">
+                    <img src="c:\Users\aalol\OneDrive\Desktop\image\money.jpg" alt="Money Heist">
+                    <div class="show-overlay">
+                        <button class="play-icon"><i class="fas fa-play"></i></button>
+                    </div>
+                    <span class="show-badge new">NEW</span>
+                </div>
+                <div class="show-info">
+                    <h3>Money Heist</h3>
+                    <div class="show-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 8.3</span>
+                        <span class="seasons">5 Seasons</span>
+                    </div>
+                </div>
+            </div>
+            <div class="show-card" data-category="drama">
+                <div class="show-poster">
+                    <img src="c:\Users\aalol\OneDrive\Desktop\image\cr.jpg" alt="The Crown">
+                    <div class="show-overlay">
+                        <button class="play-icon"><i class="fas fa-play"></i></button>
+                    </div>
+                    <span class="show-badge premium">PREMIUM</span>
+                </div>
+                <div class="show-info">
+                    <h3>The Crown</h3>
+                    <div class="show-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 8.7</span>
+                        <span class="seasons">6 Seasons</span>
+                    </div>
+                </div>
+            </div>
+            <div class="show-card" data-category="action">
+                <div class="show-poster">
+                    <img src="c:\Users\aalol\OneDrive\Desktop\image\y.jpg" alt="The Boys">
+                    <div class="show-overlay">
+                        <button class="play-icon"><i class="fas fa-play"></i></button>
+                    </div>
+                    <span class="show-badge hd">HD</span>
+                </div>
+                <div class="show-info">
+                    <h3>The Boys</h3>
+                    <div class="show-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 8.7</span>
+                        <span class="seasons">4 Seasons</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Releases -->
+    <section class="new-releases">
+        <div class="section-header">
+            <h2>New Releases</h2>
+            <a href="#" class="view-all-link">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="shows-grid small-grid">
+            <div class="show-card" data-category="scifi">
+                <div class="show-poster">
+                    <img src="c:\Users\aalol\OneDrive\Desktop\image\the.jpg" alt="The Last of Us">
+                    <div class="show-overlay">
+                        <button class="play-icon"><i class="fas fa-play"></i></button>
+                    </div>
+                    <span class="show-badge new">NEW</span>
+                </div>
+                <div class="show-info">
+                    <h3>The Last of Us</h3>
+                    <div class="show-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 8.9</span>
+                        <span class="seasons">2 Seasons</span>
+                    </div>
+                </div>
+            </div>
+            <div class="show-card" data-category="drama">
+                <div class="show-poster">
+                    <img src="c:\Users\aalol\OneDrive\Desktop\image\6.jpg" alt="Wednesday">
+                    <div class="show-overlay">
+                        <button class="play-icon"><i class="fas fa-play"></i></button>
+                    </div>
+                    <span class="show-badge new">NEW</span>
+                </div>
+                <div class="show-info">
+                    <h3>Wednesday</h3>
+                    <div class="show-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 8.2</span>
+                        <span class="seasons">1 Season</span>
+                    </div>
+                </div>
+            </div>
+            <div class="show-card" data-category="anime">
+                <div class="show-poster">
+                    <img src="c:\Users\aalol\OneDrive\Desktop\image\ds.jpg" alt="Demon Slayer">
+                    <div class="show-overlay">
+                        <button class="play-icon"><i class="fas fa-play"></i></button>
+                    </div>
+                    <span class="show-badge hd">4K</span>
+                </div>
+                <div class="show-info">
+                    <h3>Demon Slayer</h3>
+                    <div class="show-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 8.7</span>
+                        <span class="seasons">4 Seasons</span>
+                    </div>
+                </div>
+            </div>
+            <div class="show-card" data-category="thriller">
+                <div class="show-poster">
+                    <img src="c:\Users\aalol\OneDrive\Desktop\image\sq.jpg" alt="Squid Game">
+                    <div class="show-overlay">
+                        <button class="play-icon"><i class="fas fa-play"></i></button>
+                    </div>
+                    <span class="show-badge new">NEW</span>
+                </div>
+                <div class="show-info">
+                    <h3>Squid Game</h3>
+                    <div class="show-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 8.0</span>
+                        <span class="seasons">2 Seasons</span>
+                    </div>
+                </div>
+            </div>
+            <div class="show-card" data-category="comedy">
+                <div class="show-poster">
+                    <img src="c:\Users\aalol\OneDrive\Desktop\image\te.jpg" alt="Ted Lasso">
+                    <div class="show-overlay">
+                        <button class="play-icon"><i class="fas fa-play"></i></button>
+                    </div>
+                    <span class="show-badge premium">PREMIUM</span>
+                </div>
+                <div class="show-info">
+                    <h3>Ted Lasso</h3>
+                    <div class="show-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 8.8</span>
+                        <span class="seasons">3 Seasons</span>
+                    </div>
+                </div>
+            </div>
+            <div class="show-card" data-category="action">
+                <div class="show-poster">
+                    <img src="c:\Users\aalol\OneDrive\Desktop\image\po.jpg" alt="Peaky Blinders">
+                    <div class="show-overlay">
+                        <button class="play-icon"><i class="fas fa-play"></i></button>
+                    </div>
+                    <span class="show-badge hd">HD</span>
+                </div>
+                <div class="show-info">
+                    <h3>Peaky Blinders</h3>
+                    <div class="show-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 8.8</span>
+                        <span class="seasons">6 Seasons</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="tv-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                  
+    </footer>
+</body>
+
+</html>

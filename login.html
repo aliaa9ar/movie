@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Love - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <!-- Background Image -->
+    <div class="login-background">
+        <img src="c:\Users\aalol\OneDrive\Desktop\image\im.jpg" alt="Background">
+        <div class="background-overlay"></div>
+    </div>
+
+    <!-- Login Container -->
+    <div class="login-container">
+        <!-- Logo -->
+        <div class="login-logo">
+            <span class="logo-text">Movie</span>
+            <span class="logo-highlight">love</span>
+        </div>
+
+        <!-- Login Card -->
+        <div class="login-card">
+            <div class="card-header">
+                <h1>Welcome Back!</h1>
+                <p>Sign in to continue watching your favorite movies</p>
+            </div>
+
+            <form class="login-form" id="login-form">
+                <div class="input-group">
+                    <div class="input-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <div class="input-highlight"></div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="button" class="toggle-password" id="toggle-password">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <div class="input-highlight"></div>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="login-btn" id="login-btn">
+                    <span>Sign In</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+
+            <div class="divider">
+                <span>or continue with</span>
+            </div>
+
+            <div class="social-login">
+                <button class="social-btn google" id="google-btn">
+                    <i class="fab fa-google"></i>
+                </button>
+                <button class="social-btn facebook" id="facebook-btn">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                <button class="social-btn twitter" id="twitter-btn">
+                    <i class="fab fa-twitter"></i>
+                </button>
+                <button class="social-btn apple" id="apple-btn">
+                    <i class="fab fa-apple"></i>
+                </button>
+            </div>
+
+            <div class="signup-link">
+                Don't have an account? <a href="#">Sign Up</a>
+            </div>
+        </div>
+
+        <!-- Back to Home -->
+        <a href="index.html" class="back-home">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
